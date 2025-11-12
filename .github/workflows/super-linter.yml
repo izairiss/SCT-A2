@@ -1,8 +1,11 @@
 name: Super-linter
 
 on: # yamllint disable-line rule:truthy
-  push: null
-  pull_request: null
+  push:
+    branches: [ super-linter, main ]
+  pull_request:
+    branches: [ super-linter, main ]
+
 
 permissions: {}
 
